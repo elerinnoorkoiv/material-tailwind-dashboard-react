@@ -1,10 +1,11 @@
 import {
   HomeIcon,
   UserCircleIcon,
-  TableCellsIcon,
-  InformationCircleIcon,
   ServerStackIcon,
   RectangleStackIcon,
+  UsersIcon,
+  PresentationChartBarIcon,
+  ChartBarIcon
 } from "@heroicons/react/24/solid";
 import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
@@ -19,30 +20,38 @@ export const routes = [
     pages: [
       {
         icon: <HomeIcon {...icon} />,
-        name: "dashboard",
+        name: "Avaleht",
         path: "/home",
         element: <Home />,
       },
-      {
+      /*{
         icon: <UserCircleIcon {...icon} />,
-        name: "profile",
+        name: "Profiil",
         path: "/profile",
         element: <Profile />,
-      },
+      },*/
       {
-        icon: <TableCellsIcon {...icon} />,
-        name: "tables",
+        icon: <ChartBarIcon {...icon} />,
+        name: "Tasemed",
         path: "/tables",
         element: <Tables />,
       },
       {
-        icon: <InformationCircleIcon {...icon} />,
-        name: "notifications",
-        path: "/notifications",
-        element: <Notifications />,
+        icon: <PresentationChartBarIcon {...icon} />,
+        name: "Workshop",
+        path: "/tables",
+        element: <Tables />,
       },
+      {
+        icon: <UsersIcon {...icon} />,
+        name: "Inimesed",
+        path: "/tables",
+        element: <Tables />,
+      },
+      
     ],
   },
+  /* 
   {
     title: "auth pages",
     layout: "auth",
@@ -60,7 +69,7 @@ export const routes = [
         element: <SignUp />,
       },
     ],
-  },
+  },*/
 ];
 
 export default routes;

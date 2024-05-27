@@ -135,6 +135,7 @@ export function Configurator() {
         </div>
         <div className="mb-12">
           <hr />
+          {/* 
           <div className="flex items-center justify-between py-5">
             <Typography variant="h6" color="blue-gray">
               Navbar Fixed
@@ -225,7 +226,7 @@ export function Configurator() {
               <i className="fa-brands fa-facebook text-white" />
               Share
             </Button>
-          </div>
+          </div>*/}
         </div>
       </div>
     </aside>
